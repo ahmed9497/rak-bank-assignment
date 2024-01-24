@@ -7,10 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Loader from './components/loader.tsx';
 import { AppContext } from './context/appContext.tsx';
 
-// interface Props {
-//   id: string,
-//   title: string
-// }
+
 function App() {
 
 
