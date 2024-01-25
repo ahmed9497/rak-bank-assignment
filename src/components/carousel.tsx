@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Indicators from "./indicators";
 import PoolForm from "./pollForm";
+import { LuBookOpen } from "react-icons/lu";
 
 
 export type Inputs = {
@@ -41,6 +42,9 @@ const Carousel = ({ slides }: SlidesProps) => {
   return (
     <div className="overflow-hidden h-[100vh] relative"
       onWheel={(e) => handleScroll(e)}>
+       <div className="absolute top-10 left-10 z-10">
+      <LuBookOpen size={40} color="white"/>
+      </div>
       <div
         className={`flex flex-col transition ease-in duration-500`}
         style={{
